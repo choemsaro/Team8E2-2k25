@@ -1,0 +1,103 @@
+/* Main container for event content */
+.event.content {
+    padding: 40px 0;
+    background-color: #f8f9fa; 
+}
+
+/* Center content */
+.container_s {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Event section */
+.event-main {
+    margin-top: 20px;
+}
+
+/* Event grid wrapper */
+.event-grids {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+/* Individual event grid */
+.event-grid {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Event heading */
+.event-grid .hedding {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+.event-grid.small-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Service price */
+.event-grid.large-text .text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #007bff;
+    margin: 0;
+}
+
+/* Button container */
+.text-button {
+    text-align: right;
+}
+
+/* Booking button */
+.button.yellow a {
+    text-decoration: none;
+    background-color: blue;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    height: 42px;
+}
+
+/* Hover effect */
+.button.yellow a:hover {
+    background-color: blue;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .container_s {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-grids {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-grid {
+        width: 100%;
+    }
+
+    .text-button {
+        text-align: center;
+    }
+}
